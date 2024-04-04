@@ -1,0 +1,241 @@
+@media (max-width: 767.98px){
+
+    .IndexPage-nav.sideNav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 9999;
+        margin: 0;
+
+        >ul li.item-nav .Dropdown.App-titleControl .Dropdown-toggle.Button{
+            display: none !important;
+        }
+    }
+    .App{
+
+        .App-content{
+            transform: none;
+            transition: transform .4s;
+        }
+        &.drawerOpen{
+            .App-content{
+                transform: translateX(var(--drawer-width));
+                transition: transform .4s;
+            }
+        }
+        .App-navigation{
+            .sidebaricon{
+                position: fixed;
+                right: 0px;
+                button{
+                    float: none;
+                    height: var(--header-height-phone);
+                    width: auto;
+                    box-shadow: none !important;
+                    background: transparent !important;
+                    padding: 13px !important;
+                    margin: 0px !important;
+                    border: none;
+                    font-size: 16px;
+                    color: var(--header-control-color) !important;
+                    .Button-icon{
+                        font-size: 16px;
+                        transform: rotateY(180deg);
+                    }
+                    .Button-label{
+                        display:none;
+                    }
+                }
+            }
+            
+            
+        }
+        .IndexPage-nav{
+
+            .App-primaryControl{
+                position: initial !important;
+                width: 100%;
+                right: initial;
+                margin-bottom: 15px !important;
+                .Button{
+                    display: block;
+                    width: 100%;
+                    background: var(--button-bg) !important;
+                    .Button-icon{
+                        display: none;
+                    }
+                    .Button-label{
+                        display:block;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            &.sideNav{
+                position: fixed;
+                top:0;
+                right:0;
+                z-index: 9999;
+                margin:0;
+                // display: none;
+                > ul{
+                    background: var(--header-bg);
+                    width: var(--drawer-width);
+                    position: fixed;
+                    right: 0;
+                    top: 0;
+                    bottom: auto;
+                    height: 100vh;
+                    box-shadow: 0 2px 6px var(--shadow-color);
+                    transform: translateX(calc(~"6px + var(--drawer-width)"));
+                    transition: transform .2s;
+                    z-index: var(--zindex-modal);
+
+                    li.item-nav{
+                        .Dropdown{
+                            &.App-titleControl{
+                                position:relative !important;
+                                display: block;
+                                width:100%;
+                                margin-left: 0;
+                                left: 0;
+
+                                .Dropdown-toggle.Button{
+                                    display:none;
+                                }
+                            }
+                            .Dropdown-menu{
+                                bottom: auto;
+                                top: 0;
+                                display: block;
+                                position: relative;
+                                z-index: 9999;
+                                visibility: visible;
+                                margin: 0;
+                                max-height: 100vh;
+                                transform: none;
+                                box-shadow: none;
+                                padding-bottom: 0px !important;
+                            }
+                        }
+                    }
+                }
+
+                &.sideNavOpen{
+                    // display: block;
+                    > ul{
+                        transform: none !important;
+                        padding:10px;
+                        z-index: 9999;
+                        
+                    }
+                }
+                
+            }
+        
+        }
+
+        .Navigation{
+            &.App-backControl{
+                
+                .Navigation-drawer{
+                    &:before{
+                        font-family: "Font Awesome 6 Free";
+                        // font-weight: 700;
+                        content: "\f086";
+                        position:absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size:18px;
+                    }
+                    i.icon{
+                        display:none;
+                    }
+                }
+            }
+        }
+
+        .Header-primary{
+            padding-bottom:15px;
+            border-bottom: 1px solid #eee;
+
+            .App-primaryControl{
+                position: relative !important;
+                margin-bottom:10px !important;
+                >.Button{
+                    display:flex;
+                    background: var(--button-primary-bg) !important;
+                    .Button-icon{
+                        margin-right:7px;
+                    }
+                    .Button-label{
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .Header-secondary{
+            .item-search{
+                display:none;
+            }
+            .item-newDiscussion{
+                display:none;
+            }
+        }
+        
+        .App-titleControl{
+        }
+        .App-backControl{}
+    }
+
+    // .Composer:not(.minimized){
+    //     top: auto !important;
+    //     bottom: 0 !important;
+    //     // height: 450px !important;
+    //     // max-height: 100vh;
+    // }
+
+    // .Composer.minimized{
+    //     background: #193d90;
+
+    //     .ComposerBody-header{
+    //         h3{
+    //             color:#fff;
+    //         }
+    //     }
+    // }
+
+}
+@media (min-width: 768px){
+    .App-navigation{
+        .sidebaricon{
+            display:none;
+        }
+    }
+    .Header-primary{
+        .item-search{
+            display:none;
+        }
+        .item-newDiscussion{
+            display:none;
+        }
+    }
+
+    .Header-secondary{
+        .item-newDiscussion{
+            margin: 0 10px;
+            .Button{
+                padding: 10px 15px;
+            }
+            .Button-icon{
+                display: block;
+                margin-right:0;
+            }
+            .Button-label{
+                display:none;
+            }
+        }
+    }
+}
