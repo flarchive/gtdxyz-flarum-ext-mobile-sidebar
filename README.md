@@ -2,13 +2,14 @@
 
 > **Read-only archive of released versions of gtdxyz/flarum-ext-mobile-sidebar.** Not for installation: use [Packagist](https://packagist.org/packages/gtdxyz/flarum-ext-mobile-sidebar) or the [upstream repository](https://github.com/daocatt/flarum-ext-mobile-sidebar).
 
-**0** versions archived · Latest: [`1.0.1`](https://github.com/flarchive/gtdxyz-flarum-ext-mobile-sidebar/tree/archive/v1.0.1) · License: `MIT` · Flarum: `^1.8`
+**2** versions archived · Latest: [`1.0.1`](https://github.com/flarchive/gtdxyz-flarum-ext-mobile-sidebar/tree/archive/v1.0.1) · License: `MIT` · Flarum: `^1.8`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| — | — | — | — |
+| `1.0` | 2024-04-02 | `^1.8` | [Browse](https://github.com/flarchive/gtdxyz-flarum-ext-mobile-sidebar/tree/archive/v1.0) |
+| `1.0.1` | 2024-04-04 | `^1.8` | [Browse](https://github.com/flarchive/gtdxyz-flarum-ext-mobile-sidebar/tree/archive/v1.0.1) |
 
 Catalog entry: [packages/gtdxyz-flarum-ext-mobile-sidebar.json](https://github.com/flarchive/archive-index/blob/main/packages/gtdxyz-flarum-ext-mobile-sidebar.json)
 
